@@ -3,6 +3,8 @@ CMSO is an ontology that aims to describe computational materials science sample
 
 ![Schematic representation of CMSO](images/cmso.png)
 
+This project is in the initial phase of development. 
+
 ## Acknowledgements
 
 This work is supported by the [NFDI-Matwerk](https://nfdi-matwerk.de/) consortia.
