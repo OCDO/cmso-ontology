@@ -7,4 +7,4 @@ This project is in the initial phase of development.
 
 ## Acknowledgements
 
-This work is supported by the [NFDI-Matwerk](https://nfdi-matwerk.de/) consortia.
+This work is supported by the [NFDI-Matwerk](https://nfdi-matwerk.de/) consortia.(Deutsche Forschungsgemeinschaft (DFG) - Projektnummer 460247524)
