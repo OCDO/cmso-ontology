@@ -15,8 +15,8 @@
         <terms:contributor>https://orcid.org/0000-0002-6776-1213</terms:contributor>
         <terms:contributor>https://orcid.org/0000-0003-0698-4891</terms:contributor>
         <terms:creator>https://orcid.org/0000-0001-7564-7990</terms:creator>
-        <terms:description>PLDO focuses on the description of plane defects in crystalline materials.</terms:description>
-        <terms:title>Plane Defects Ontology (PLDO)</terms:title>
+        <terms:description>PLDO focuses on the description of planar defects in crystalline materials.</terms:description>
+        <terms:title>Planar Defects Ontology (PLDO)</terms:title>
     </owl:Ontology>
     
 
@@ -183,6 +183,263 @@
         <skos:definition xml:lang="en">The preferred lexical label for a resource, in a given language.</skos:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/hasTiltComponent -->
+
+    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/hasTiltComponent">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/MixedGrainBoundary"/>
+        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/pldo/TiltGrainBoundary"/>
+        <rdfs:label>has tilt component</rdfs:label>
+        <skos:definition>The relation between a mixed grain boundary and the tilt grain boundary component.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/hasTwistComponent -->
+
+    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/hasTwistComponent">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/MixedGrainBoundary"/>
+        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/pldo/TwistGrainBoundary"/>
+        <rdfs:label>has twist component</rdfs:label>
+        <skos:definition>The relation between a mixed grain boundary and the twist grain boundary component.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/geometricalDegreesOfFreedom -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/geometricalDegreesOfFreedom">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:label>geometrical degrees of freedom</rdfs:label>
+        <skos:definition>The geometrical degrees of freedom are the parameters that are necessary to characterize a grain boundary.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/hasGBplane -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/hasGBplane">
+        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/macroscopicDegreesOfFreedom"/>
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has GB plane</rdfs:label>
+        <skos:definition>A data property indicating the grain boundary (GB) plane using Miller Indices.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/hasMisorientationAngle -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/hasMisorientationAngle">
+        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/macroscopicDegreesOfFreedom"/>
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>has misorientation angle</rdfs:label>
+        <skos:definition>A data property indicating the misorientation angle (θ) of the grains with respect to each other.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/hasRotationAxis -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/hasRotationAxis">
+        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/macroscopicDegreesOfFreedom"/>
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has rotation axis</rdfs:label>
+        <skos:definition>A data property indication the rotation axis [uvw].</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/hasSigmaValue -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/hasSigmaValue">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Sigma value of a GB is the coincidence index, calculated as the coincidence unit cell volume by the crystal primitive unit cell volume. The coincidence index refers to the Coincidence Site Lattice (CSL).</rdfs:comment>
+        <rdfs:label>has sigma value</rdfs:label>
+        <skos:definition>A data property linking a GB with its sigma value.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/macroscopicDegreesOfFreedom -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/macroscopicDegreesOfFreedom">
+        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/geometricalDegreesOfFreedom"/>
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:comment>In simulations of grain boundaries, the macroscopic DOFs are imposed on the structure.</rdfs:comment>
+        <rdfs:label>macroscopic degrees of freedom</rdfs:label>
+        <skos:definition>There are five macroscopic degrees of freedom (DOFs) that are sufficient to describe the thermodynamic description of the grain boundary.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/microscopicDegreesOfFreedom -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/pldo/microscopicDegreesOfFreedom">
+        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/geometricalDegreesOfFreedom"/>
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:comment>In simulations of grain boundaries, the microscopic DOFs are obtained after the grain boundary energy minimization.</rdfs:comment>
+        <rdfs:label>microscopic degrees of freedom</rdfs:label>
+        <skos:definition>The microscopic degrees of freedom (DOFs) refer to the translation of one crystal with respect to the other at the microscopic scale. The microscopic parameters result from the relaxation process and are not independent of the macroscopic parameters.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/AntiphaseBoundary -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/AntiphaseBoundary">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/PlanarDefect"/>
+        <rdfs:label>Antiphase Boundary</rdfs:label>
+        <skos:altLabel>APB</skos:altLabel>
+        <skos:definition>An antiphase boundary is a planar defect which occurs in ordered alloys. The boundary separates two domains of the same ordered phase.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/GrainBoundary -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/PlanarDefect"/>
+        <rdfs:label>Grain Boundary</rdfs:label>
+        <skos:altLabel>GB</skos:altLabel>
+        <skos:definition>A grain boundary is a planar defect that separates two crystals (or grains) of the same material.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/LowAngleGrainBoundary -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/LowAngleGrainBoundary">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:comment>Reference: ISBN 978-94-007-4968-9</rdfs:comment>
+        <rdfs:label>Low Angle Grain Boundary</rdfs:label>
+        <skos:altLabel>Low-Angle Grain Boundary</skos:altLabel>
+        <skos:definition>A low angle GB is a grain boundary with a misorientation angle lower than 15 degrees.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/MixedGrainBoundary -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/MixedGrainBoundary">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:comment>Reference: ISBN 978-94-007-4968-9</rdfs:comment>
+        <rdfs:label>Mixed Grain Boundary</rdfs:label>
+        <skos:definition>A mixed grain boundary is a grain boundary where the [uvw] rotation axis has perpendicular and parallel components with respect to the boundary plane.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/PlanarDefect -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/PlanarDefect">
+        <rdfs:label>Planar Defect</rdfs:label>
+        <skos:altLabel>Interface</skos:altLabel>
+        <skos:definition>A planar defect is a defect of the crystal structure across a plane. It is considered to be a two-dimensional defect, such as an internal interface or the surface.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/StackingFault -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/StackingFault">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/PlanarDefect"/>
+        <rdfs:label>Stacking Fault</rdfs:label>
+        <skos:definition>A stacking fault is a planar defect created by an error (fault) in the order of the sequential layering of crystallographic planes.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/Surface -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/Surface">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/PlanarDefect"/>
+        <rdfs:label>Surface</rdfs:label>
+        <skos:definition>The free surface (or external surface) of the material is a planar defect where the surface atoms have no neighbours or cohesive bonds on the external side.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/SymmetricalTiltGrainBoundary -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/SymmetricalTiltGrainBoundary">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/TiltGrainBoundary"/>
+        <rdfs:comment>Reference: ISBN 978-94-007-4968-9</rdfs:comment>
+        <rdfs:label>Symmetrical Tilt Grain Boundary</rdfs:label>
+        <skos:definition>A symmetrical tilt grain boundary is a tilt grain boundary where the two grains are symmetric. The boundary plane has the same Miller indices in crystals I and II: {hkl}_1 = {hkl}_2.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/TiltGrainBoundary -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/TiltGrainBoundary">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:comment>Reference: ISBN 978-94-007-4968-9</rdfs:comment>
+        <rdfs:label>Tilt Grain Boundary</rdfs:label>
+        <skos:altLabel>Tilt Boundary</skos:altLabel>
+        <skos:definition>A twist boundary is a grain boundary with a [uvw] rotation axis perpendicular to the boundary plane.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/TwinBoundary -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/TwinBoundary">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/PlanarDefect"/>
+        <rdfs:label>Twin Boundary</rdfs:label>
+        <skos:definition>A twin boundary is a planar defect that occurs between two separate crystals which are mirror images of each other, both crystals should have the same crystal structure.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/pldo/TwistGrainBoundary -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/pldo/TwistGrainBoundary">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/pldo/GrainBoundary"/>
+        <rdfs:comment>Reference: ISBN 978-94-007-4968-9</rdfs:comment>
+        <rdfs:label>Twist Grain Boundary</rdfs:label>
+        <skos:altLabel>Twist Boundary</skos:altLabel>
+        <skos:definition>A twist boundary is a grain boundary with a [uvw] rotation axis contained within the boundary plane.</skos:definition>
+    </owl:Class>
     
 
 
