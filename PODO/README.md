@@ -2,4 +2,4 @@
 
 PODO focuses on the description of point defects in crystalline materials.
 
-![Schematic representation of PODO](images/PODO.jpg)
+![Schematic representation of PODO](cmso-ontology/images/PODO.jpg)
