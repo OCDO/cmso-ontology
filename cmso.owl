@@ -188,6 +188,23 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/LatexString -->
+
+    <rdfs:Datatype rdf:about="http://qudt.org/schema/qudt/LatexString"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -381,6 +398,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Unit"/>
         <rdfs:label>has unit</rdfs:label>
         <skos:definition>A relation indicating the unit.</skos:definition>
     </owl:ObjectProperty>
@@ -1082,6 +1100,16 @@
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cmso/Vector">
         <rdfs:label>Vector</rdfs:label>
         <skos:definition>Vector is a quantity that has a magnitude and direction.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/schema/qudt/Unit -->
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/Unit">
+        <terms:description rdf:datatype="http://qudt.org/schema/qudt/LatexString">A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension). For example, the meter is a quantity of length that has been rigorously defined and standardized by the BIPM (International Board of Weights and Measures). Any measurement of the length can be expressed as a number multiplied by the unit meter. More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  \(Q = nU\).</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://qudt.org/2.1/schema/qudt"/>
+        <rdfs:label>Unit</rdfs:label>
     </owl:Class>
     
 
