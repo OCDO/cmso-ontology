@@ -12,7 +12,3 @@ This project is in the initial phase of development.
 
 ## Acknowledgements
 This work is supported by the [NFDI-Matwerk](https://nfdi-matwerk.de) consortia. (Deutsche Forschungsgemeinschaft (DFG) - Projektnummer 460247524)
-
-
-<img src="images/Logo_IAS-9.png" height="100">
-<img src="images/Logo_FZJ.jpg" height="100">
