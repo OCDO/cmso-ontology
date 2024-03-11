@@ -17,6 +17,7 @@
         <terms:creator>https://orcid.org/0000-0001-7564-7990</terms:creator>
         <terms:description>CMSO is an ontology that aims to describe computational materials science samples (or structures), including crystalline defects.</terms:description>
         <terms:title>Computational Material Sample Ontology (CMSO)</terms:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0.1</owl:versionInfo>
     </owl:Ontology>
     
 
