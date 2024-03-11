@@ -1,0 +1,22 @@
+abstract: '<div>
+
+  <h1>Computational Material Sample Ontology (CMSO)</h1>
+
+  <a href="https://github.com/OCDO/cmso-ontology#computational-material-sample-ontology-cmso"></a></div>
+
+  <p>CMSO is an ontology that aims to describe computational materials science samples
+  (or structures), including crystalline defects. Initially focusing on the description
+  at the atomic scale.</p>'
+authors:
+- affiliation: "Forschungszentrum J\xFClich"
+  family-names: Abril Azocar Guzman
+cff-version: 1.2.0
+date-released: '2024-03-11'
+doi: 10.5281/zenodo.10805536
+identifiers:
+- type: url
+  value: http://purls.helmholtz-metadaten.de/cmso/
+license:
+- cc-by-4.0
+title: 'OCDO/cmso-ontology: v0.0.1'
+version: v0.0.1
