@@ -10,5 +10,5 @@ This project is in the initial phase of development.
 - Meeting dates can be found [here](https://github.com/Materials-Data-Science-and-Informatics/cmso-ontology/wiki)
 - Proposing new terms to be included in the ontologies can be suggested raising an issue.
 
-## Acknowledgements
-This work is supported by the [NFDI-Matwerk](https://nfdi-matwerk.de) consortia. (Deutsche Forschungsgemeinschaft (DFG) - Projektnummer 460247524)
+## Acknowledgement
+This work is developed at the Materials Data Science and Informatics (IAS‑9), Forschungszentrum Jülich GmbH. Supported by the NFDI-MatWerk consortium (Funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under the National Research Data Infrastructure – NFDI 38/1 – project number 460247524"). 
