@@ -34,7 +34,7 @@ keywords:
   - semantics
   - atomistic simulations
 license: CC-BY-4.0
-commit: a1f69a2
+commit: a1f69a28480796602b57fe9c0766d315797ea042
 version: v0.0.1
 date-released: '2024-03-11'
 preferred-citation:
