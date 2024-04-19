@@ -1,22 +1,53 @@
-abstract: '<div>
+# This CITATION.cff file was generated with cffinit.
 
-  <h1>Computational Material Sample Ontology (CMSO)</h1>
-
-  <a href="https://github.com/OCDO/cmso-ontology#computational-material-sample-ontology-cmso"></a></div>
-
-  <p>CMSO is an ontology that aims to describe computational materials science samples
-  (or structures), including crystalline defects. Initially focusing on the description
-  at the atomic scale.</p>'
-authors:
-- affiliation: "Forschungszentrum J\xFClich"
-  family-names: Abril Azocar Guzman
 cff-version: 1.2.0
-date-released: '2024-03-11'
-doi: 10.5281/zenodo.10805536
-identifiers:
-- type: url
-  value: http://purls.helmholtz-metadaten.de/cmso/
-license:
-- cc-by-4.0
 title: 'OCDO/cmso-ontology: v0.0.1'
+message: >-
+  Please cite this ontology using the metadata from
+  "preferred-citation".
+type: software
+authors:
+  - given-names: Abril
+    family-names: Azocar Guzman
+    orcid: 'https://orcid.org/0000-0001-7564-7990'
+    email: a.azocar.guzman@fz-juelich.de
+    affiliation: Forschungszentrum Juelich (FZJ)
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10805536
+    description: Version 0.0.1 of the ontology in Zenodo
+  - type: url
+    value: 'https://purls.helmholtz-metadaten.de/cmso/'
+    description: Ontology IRI
+repository-code: 'https://github.com/OCDO/cmso-ontology'
+abstract: >-
+  Computational Material Sample Ontology (CMSO) is an
+  ontology that aims to describe computational materials
+  science samples (or structures), including crystalline
+  defects. Initially focusing on the description at the
+  atomic scale.
+keywords:
+  - ontology
+  - crystal structure
+  - computational materials science
+  - materials informatics
+  - semantics
+  - atomistic simulations
+license: CC-BY-4.0
+commit: a1f69a2
 version: v0.0.1
+date-released: '2024-03-11'
+preferred-citation:
+  authors:
+    - family-names: Azocar Guzman
+      given-names: Abril
+    - family-names: Menon
+      given-names: Sarath
+    - family-names: Hofmann
+      given-names: Volker
+    - family-names: Sandfeld
+      given-names: Stefan
+  title: "Computational Material Sample Ontology (CMSO)"
+  type: generic
+  year: 2024
+  url: https://purls.helmholtz-metadaten.de/cmso/
