@@ -301,6 +301,17 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/cmso/hasAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/cmso/hasAttribute">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cmso/AtomicScaleSample"/>
+        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/cmso/AtomAttribute"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a sample and a type of atom attribute, which refers to a per atom quantity of the atomic scale sample.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has attribute</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/cmso/hasBasis -->
 
     <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/cmso/hasBasis">
@@ -567,6 +578,17 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/cmso/hasBravaisLattice -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cmso/hasBravaisLattice">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CrystalStructure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking the crystal structure and the corresponding Bravais lattice.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has Bravais lattice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/cmso/hasChemicalSymbol -->
 
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cmso/hasChemicalSymbol">
@@ -726,8 +748,9 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cmso/hasReference">
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking an entity with a reference (e.g. bibliographic) to another resource.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The expected usage is to provide a Uniform Resource Identifier Reference (URI), which should point the referenced resource (e.g. a DOI for a publication)</rdfs:comment>
         <rdfs:label>has reference</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -793,6 +816,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cmso/hasSymbol">
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking an entity with its symbol.</obo:IAO_0000115>
         <rdfs:label>has symbol</rdfs:label>
     </owl:DatatypeProperty>
@@ -803,7 +827,7 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cmso/hasValue">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking a calculated property to its value.</obo:IAO_0000115>
         <rdfs:label>has value</rdfs:label>
     </owl:DatatypeProperty>
