@@ -15,7 +15,7 @@ jobs:
     - name: Widoco
       run: |
             wget -O widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.21/widoco-1.4.21-jar-with-dependencies_JDK-11.jar
-            java -jar widoco.jar -ontFile cmso.owl -outFolder docs -uniteSections -lang en-de -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+            java -jar widoco.jar -ontFile main/cmso.owl -outFolder docs -uniteSections -lang en-de -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
             mv docs/doc/* docs/
             cp docs/index-en.html docs/index.html
             rm widoco.jar
