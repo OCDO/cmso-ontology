@@ -1,6 +1,9 @@
 # Computational Material Sample Ontology (CMSO)
 CMSO is an ontology that aims to describe computational materials science samples (or structures), including crystalline defects. Initially focusing on the description at the atomic scale.
 
+### Documentation
+[https://ocdo.github.io/cmso-ontology/](https://ocdo.github.io/cmso-ontology/)
+
 ![Schematic representation of CMSO](images/CMSO.jpg)
 
 This project is in the initial phase of development. 
