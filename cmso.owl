@@ -12,17 +12,17 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="http://purls.helmholtz-metadaten.de/cmso/">
-        <terms:contributor>https://orcid.org/0000-0001-9560-4728</terms:contributor>
-        <terms:contributor>https://orcid.org/0000-0002-5149-603X</terms:contributor>
-        <terms:contributor>https://orcid.org/0000-0002-6776-1213</terms:contributor>
-        <terms:contributor>https://orcid.org/0000-0003-0698-4891</terms:contributor>
-        <terms:creator>https://orcid.org/0000-0001-7564-7990</terms:creator>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9560-4728"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-5149-603X"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-6776-1213"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-0698-4891"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0001-7564-7990"/>
         <terms:description>CMSO is an ontology that aims to describe computational materials science samples (or structures), including crystalline defects.</terms:description>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Computational Material Sample Ontology (CMSO)</terms:title>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/OCDO/cmso-ontology</rdfs:seeAlso>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0.1</owl:versionInfo>
-        <schema:citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azocar Guzman, A., Menon, S. (2024), Computational Material Sample Ontology, https://purls.helmholtz-metadaten.de/cmso/</schema:citation>
+        <schema:citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azocar Guzman, A., Menon, S., Hofmann, V., Hickel, T., Sandfeld. S. (2024), Computational Material Sample Ontology, https://purls.helmholtz-metadaten.de/cmso/</schema:citation>
         <schema:creativeWorkStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pre-release</schema:creativeWorkStatus>
         <schema:funder rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/05qj6w324</schema:funder>
         <schema:logo rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/OCDO/.github/blob/main/profile/ocdo_logo.png</schema:logo>

@@ -1,0 +1,28 @@
+name: HTML
+
+on:
+  push:
+    branches:
+    - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: main
+        path: main
+    - name: Widoco
+      run: |
+            java -jar widoco.jar -ontFile cmso.owl -outFolder docs -uniteSections -lang en-de -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+            mv docs/doc/* docs/
+            cp docs/index-en.html docs/index.html
+            rm widoco.jar
+    - name: GitHub page
+      if: success()
+      uses: crazy-max/ghaction-github-pages@v3
+      with:
+        target_branch: gh-pages
+        build_dir: docs
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
