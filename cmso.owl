@@ -9,7 +9,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="http://purls.helmholtz-metadaten.de/cmso/">
         <terms:contributor>https://orcid.org/0000-0001-9560-4728</terms:contributor>
         <terms:contributor>https://orcid.org/0000-0002-5149-603X</terms:contributor>
@@ -17,8 +18,14 @@
         <terms:contributor>https://orcid.org/0000-0003-0698-4891</terms:contributor>
         <terms:creator>https://orcid.org/0000-0001-7564-7990</terms:creator>
         <terms:description>CMSO is an ontology that aims to describe computational materials science samples (or structures), including crystalline defects.</terms:description>
+        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Computational Material Sample Ontology (CMSO)</terms:title>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/OCDO/cmso-ontology</rdfs:seeAlso>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0.1</owl:versionInfo>
+        <schema:citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azocar Guzman, A., Menon, S. (2024), Computational Material Sample Ontology, https://purls.helmholtz-metadaten.de/cmso/</schema:citation>
+        <schema:creativeWorkStatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pre-release</schema:creativeWorkStatus>
+        <schema:funder rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/05qj6w324</schema:funder>
+        <schema:logo rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/OCDO/.github/blob/main/profile/ocdo_logo.png</schema:logo>
     </owl:Ontology>
     
 
@@ -198,6 +205,16 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:label xml:lang="en-us">License</rdfs:label>
+        <skos:definition xml:lang="en-us">A legal document giving official permission to do something with the resource.</skos:definition>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/tableOfContents -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/tableOfContents">
@@ -270,6 +287,30 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <skos:definition xml:lang="en">The preferred lexical label for a resource, in a given language.</skos:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- https://schema.org/citation -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/citation"/>
+    
+
+
+    <!-- https://schema.org/creativeWorkStatus -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/creativeWorkStatus"/>
+    
+
+
+    <!-- https://schema.org/funder -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/funder"/>
+    
+
+
+    <!-- https://schema.org/logo -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/logo"/>
     
 
 
