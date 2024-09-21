@@ -20,6 +20,7 @@ jobs:
             java -jar widoco.jar -ontFile main/cmso.owl -outFolder docs -uniteSections -lang en-de -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
             mv docs/doc/* docs/
             cp docs/index-en.html docs/index.html
+            gawk -i inplace '{gsub("width=\"50/\"","width=\"200/\"",$0); print $0}' docs/index.html
             rm widoco.jar
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
