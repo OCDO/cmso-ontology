@@ -19,11 +19,10 @@ jobs:
             mv docs/doc/* docs/
             cp docs/index-en.html docs/index.html
             rm widoco.jar
-    - name: GitHub page
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v3
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
       with:
-        target_branch: gh-pages
-        build_dir: docs
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        path: "docs"
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
