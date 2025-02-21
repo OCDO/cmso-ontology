@@ -23,9 +23,9 @@ jobs:
             gawk -i inplace '{gsub("width=\"50/\"","width=\"75/\"",$0); print $0}' docs/index.html
             rm widoco.jar
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v2
+      uses: actions/upload-pages-artifact@v3
       with:
         path: "docs"
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v2
+      uses: actions/deploy-pages@v4
